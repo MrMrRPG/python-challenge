@@ -12,7 +12,7 @@ cd PyPoll
 ```
 2. Once you are at the directories where the main.py files are stored, run the files with python with the command:
 ```
-py main.py
+python main.py
 ```
 3. Once the command is executed, the results should be displayed on your command line. A copy of the result is included in the `analysis` folder in both `PyBank` and `PyRoll`.
 4. Once one of the main.py script has ran, proceed to the other folder and repeat from step 2 onwards.
