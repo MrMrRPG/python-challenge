@@ -63,8 +63,12 @@ with open(csvPath) as csvfile:
 
     #Converting headers of column to list
     pl_list = df['Voter ID'].tolist()
-    day_list = df['County'].tolist()
+    county_list = df['County'].tolist()
     candidate_list = df['Candidate'].tolist()
+
+    # set data type
+    type(county_list)
+    type(candidate_list)
     
     #Total votes in data
     sum_votes = len(df)
