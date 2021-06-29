@@ -42,7 +42,7 @@ with open(csvPath) as csvfile:
 	csvreader = csv.reader(csvfile, delimiter = ',')
 		
 	sum_month = len(df)
-	net_total_pl = df.sum(axis = 1, skipna = True)
+	net_total_pl = df.sum(axis = 0)
 	avg_pl = net_total_pl/sum_month
 
 	# Print information
