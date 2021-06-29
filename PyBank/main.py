@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[173]:
+# In[3]:
 
 
 #imports
@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 
 
-# In[174]:
+# In[4]:
 
 
 # * In this challenge, you are tasked with creating a Python script for
@@ -41,7 +41,7 @@ import numpy as np
 #
 
 
-# In[175]:
+# In[5]:
 
 
 #set directory
@@ -50,7 +50,7 @@ csvPath = os.path.join(cwd, 'Resources', 'budget_data.csv')
 df = pd.read_csv(csvPath)
 
 
-# In[225]:
+# In[10]:
 
 
 # opening and reading CSV module
@@ -104,12 +104,14 @@ def summary():
 summary()
 
 
-# In[228]:
+# In[16]:
 
 
 #output to .txt file
+txtpath = os.path.join("analysis", "analysis.txt")
+
 def external(): 
-    with open('Financial_Analysis.txt', 'w') as f:
+    with open(txtpath, 'w') as f:
         print(f"---------------------------------", file = f)
         print(f"FINANCIAL ANALYSIS", file = f)
         print(f"---------------------------------", file = f)
@@ -122,10 +124,10 @@ def external():
 external()
 
 
-# In[ ]:
+# In[14]:
 
 
-
+maxincrease_index
 
 
 # In[ ]:
